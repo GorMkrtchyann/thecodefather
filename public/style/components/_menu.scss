@@ -1,0 +1,142 @@
+.menu{
+    background: var(--white);
+    position: fixed;
+    width: 100%;
+    padding: 10px 0;
+    z-index: 20;
+    overflow: hidden;
+    font-family: Arial, Helvetica, sans-serif;
+    opacity: 0;
+    animation: menu-open 1s 0s forwards;
+    .container{
+        ul{
+            display: flex;
+            justify-content: start;
+            width: 1000px;
+            li{
+                list-style: none;
+                margin-right: 40px;
+                transition: 0.3s;
+                &:first-child{
+                    margin-left: -40px;
+                }
+                &.active{
+                    a{
+                        color: var(--purple);
+                        letter-spacing: 1px;
+                        img{
+                            filter: invert(17%) sepia(96%) saturate(5190%) hue-rotate(264deg) brightness(72%) contrast(138%);
+                            animation: desk-menu-rot 1s 0s forwards;
+                        }
+                    }
+                }
+                a{
+                    display: flex;
+                    align-items: center;
+                    text-decoration: none;
+                    font-weight: 600;
+                    color: #000;
+                    transition: 0.3s;
+                    img{
+                        width: 25px;
+                        margin-right: 7px;
+                        transition: 0.3s;
+                    }
+                    &:hover{
+                        color: var(--purple);
+                        letter-spacing: 1px;
+                        img{
+                            filter: invert(17%) sepia(96%) saturate(5190%) hue-rotate(264deg) brightness(72%) contrast(138%);
+                        }
+                    }
+                }
+                &:hover{
+                    a{
+                        img{
+                            transform: rotate(360deg);
+                        }
+                    }
+                }
+            }
+        }
+    }
+    @keyframes menu-open {
+        0%{
+            width: 0;
+            opacity: 0;
+        }
+        100%{
+            width: 100%;
+            opacity: 1;
+        }
+    }
+    @media screen and (max-width: 550px) {
+        position: fixed;
+        width: 93%;
+        border-radius: 5px;
+        opacity: 1;
+        animation: none;
+        bottom: -100px;
+        opacity: 0;
+        right: 0;
+        left: 0;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 13px 0 0 0;
+        animation: mob-menu-open 1s 0s forwards;
+        box-shadow: 0px 0px 23px -1px rgba(0,0,0,0.4);
+        @keyframes mob-menu-open {
+            0%{
+                bottom: -100px;
+                opacity: 0;
+            }
+            100%{
+                bottom: 15px;
+                opacity: 1;
+            }
+        }
+        .container{
+            ul{
+                width: auto;
+                justify-content: center;
+                li{
+                    list-style: none;
+                    margin-right: 45px;
+                    display: flex;
+                    align-items: center;
+                    &:last-child{
+                        margin-right: 0;
+                    }
+                    &.active{
+                        a{
+                            background: var(--purple);
+                            padding: 8px;
+                            border-radius: 50%;
+                            animation: rot 1s 0s forwards;
+                            @keyframes rot {
+                                0%{
+                                    transform: rotate(0deg);
+                                }
+                                100%{
+                                    transform: rotate(360deg);
+                                }
+                            }
+                            img{
+                                width: 20px;
+                                filter: invert(96%) sepia(0%) saturate(2%) hue-rotate(315deg) brightness(110%) contrast(100%);
+                            }
+                        }
+                    }
+                    a{
+                        span{
+                            display: none;
+                        }
+                        img{
+                            margin-right: 0;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
