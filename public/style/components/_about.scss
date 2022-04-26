@@ -4,7 +4,7 @@
         display: flex;
         justify-content: space-between;
         padding: 100px 0;
-        background: url(../././../images/background/background.jpg);
+        background: url(../images/background/background.jpg);
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center;
@@ -51,32 +51,11 @@
             display: none;
         }
         &_mobile{
-            width: 450px;
-            height: 400px;
             display: block;
-            margin: 0 auto;
-            padding: 70px 0 20px;
-            margin-bottom: 0;
-            .block{
-                width: 300px;
-                margin: 0 auto;
-                height: 350px; 
-                &-text{
-                    margin-top: 20px;
-                    p{
-                        font-size: 14px
-                    }
-                    img{
-                        width: 250px
-                    }
-                    h2{
-                        font-size: 23px
-                    }
-                }
-                &-2{
-                    img{
-                        width: 300px
-                    }
+            .carousel{
+                width: 320px;
+                &-indicators{
+                    display: none;
                 }
             }
         }

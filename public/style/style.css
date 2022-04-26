@@ -85,7 +85,7 @@ body {
 }
 
 header {
-  background-image: url(../../images/background/header_back_img.svg);
+  background-image: url(../images/background/header_back_img.svg);
   background-size: cover;
   height: 100vh;
 }
@@ -314,7 +314,7 @@ header .header_img .img img {
   background: var(--white);
   position: fixed;
   width: 100%;
-  padding: 10px 0;
+  padding: 20px 0 10pxgit 0;
   z-index: 20;
   overflow: hidden;
   font-family: Arial, Helvetica, sans-serif;
@@ -529,7 +529,7 @@ header .header_img .img img {
     overflow: hidden;
     left: 10px;
     top: 15px;
-    background-image: url(../../images/icons/mob-second-menu.svg);
+    background-image: url(../images/icons/mob-second-menu.svg);
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: 35px;
@@ -593,7 +593,7 @@ header .header_img .img img {
       -ms-flex-pack: justify;
           justify-content: space-between;
   padding: 100px 0;
-  background: url(../././../images/background/background.jpg);
+  background: url(../images/background/background.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -649,32 +649,13 @@ header .header_img .img img {
     display: none;
   }
   .about_mobile {
-    width: 450px;
-    height: 400px;
     display: block;
-    margin: 0 auto;
-    padding: 70px 0 20px;
-    margin-bottom: 0;
   }
-  .about_mobile .block {
-    width: 300px;
-    margin: 0 auto;
-    height: 350px;
+  .about_mobile .carousel {
+    width: 320px;
   }
-  .about_mobile .block-text {
-    margin-top: 20px;
-  }
-  .about_mobile .block-text p {
-    font-size: 14px;
-  }
-  .about_mobile .block-text img {
-    width: 250px;
-  }
-  .about_mobile .block-text h2 {
-    font-size: 23px;
-  }
-  .about_mobile .block-2 img {
-    width: 300px;
+  .about_mobile .carousel-indicators {
+    display: none;
   }
 }
 /*# sourceMappingURL=style.css.map */
