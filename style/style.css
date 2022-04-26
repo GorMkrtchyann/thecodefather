@@ -314,7 +314,7 @@ header .header_img .img img {
   background: var(--white);
   position: fixed;
   width: 100%;
-  padding: 10px 0;
+  padding: 20px 0 10pxgit 0;
   z-index: 20;
   overflow: hidden;
   font-family: Arial, Helvetica, sans-serif;
