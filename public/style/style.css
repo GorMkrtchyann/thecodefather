@@ -314,7 +314,7 @@ header .header_img .img img {
   background: var(--white);
   position: fixed;
   width: 100%;
-  padding: 20px 0 10pxgit 0;
+  padding: 20px 0 10px 0;
   z-index: 20;
   overflow: hidden;
   font-family: Arial, Helvetica, sans-serif;
@@ -583,6 +583,11 @@ header .header_img .img img {
 
 .about {
   font-family: Arial, Helvetica, sans-serif;
+  background: url(../images/background/background.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
 }
 
 .about_desktop {
@@ -593,11 +598,6 @@ header .header_img .img img {
       -ms-flex-pack: justify;
           justify-content: space-between;
   padding: 100px 0;
-  background: url(../images/background/background.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
 }
 
 .about_desktop .block {
@@ -640,6 +640,41 @@ header .header_img .img img {
   margin-top: 250px;
 }
 
+@media screen and (max-width: 1024px) {
+  .about_desktop .block {
+    width: 150px;
+    line-height: 17px;
+  }
+  .about_desktop .block .block-text {
+    margin-top: 20px;
+  }
+  .about_desktop .block hr {
+    width: 70px;
+  }
+  .about_desktop .block p {
+    font-size: 12px;
+  }
+  .about_desktop .block img {
+    width: 150px;
+  }
+  .about_desktop .block b {
+    color: var(--purple);
+    font-weight: 600;
+  }
+  .about_desktop .block h2 {
+    font-size: 17px;
+  }
+  .about_desktop .block-2 {
+    width: 200px;
+  }
+  .about_desktop .block-2 img {
+    width: 200px;
+  }
+  .about_desktop .block-1 {
+    margin-top: 150px;
+  }
+}
+
 .about_mobile {
   display: none;
 }
@@ -653,9 +688,55 @@ header .header_img .img img {
   }
   .about_mobile .carousel {
     width: 320px;
+    height: 350px;
+    margin: 70px auto 100px;
+  }
+  .about_mobile .carousel a {
+    opacity: 1;
+    width: 35px;
+  }
+  .about_mobile .carousel-control-next-icon {
+    background-image: url(../../images/icons/right-arrow.png);
+  }
+  .about_mobile .carousel-control-prev-icon {
+    background-image: url(../../images/icons/left-arrow.png);
   }
   .about_mobile .carousel-indicators {
     display: none;
   }
+  .about_mobile .carousel-inner {
+    width: 250px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  .about_mobile .carousel-inner img {
+    width: 250px;
+  }
+  .about_mobile .carousel-inner .block_text h2 {
+    margin-top: 10px;
+  }
+  .about_mobile .carousel-inner .block_text h2 b {
+    color: var(--purple);
+    font-weight: 600;
+  }
+  .about_mobile .carousel-inner .block_text hr {
+    width: 100px;
+    margin: 10px auto;
+  }
+  .about_mobile .carousel-inner .block_2 img {
+    width: 300px;
+  }
+}
+
+.content_desktop {
+  padding: 100px 0;
+}
+
+.content_desktop .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 }
 /*# sourceMappingURL=style.css.map */

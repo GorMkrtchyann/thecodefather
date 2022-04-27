@@ -5,6 +5,7 @@ import Header from "./components/Header";
 import Menu from "./components/Menu";
 import MobSecondMenu from "./components/MobSecondMenu";
 import About from "./components/About";
+import Content from "./components/Content";
 
 function App(){
 
@@ -35,6 +36,8 @@ function App(){
       <MobSecondMenu />
       <Header />
       <About />
+      <hr />
+      <Content />
     </div>
   )
 }

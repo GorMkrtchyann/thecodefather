@@ -1,0 +1,12 @@
+.content{
+    &_desktop{
+        padding: 100px 0;
+        .container{
+            display: flex;
+            justify-content: space-around;
+            // .items{
+
+            // }
+        }
+    }
+}

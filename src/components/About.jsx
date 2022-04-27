@@ -38,16 +38,18 @@ const About = () =>{
             <div className="about_mobile">
                 <Carousel>
                     <Carousel.Item className="block block-1">
-                        <img src="images/vectors/seo.png"/>
+                        <img src="images/vectors/web-developer.png"/>
                         <div className="block_text">
                             <h2><b>Վ</b>եբ <b>Ծ</b>րագարվորում</h2>
+                            <hr />
                             <p>Սովորեք վեբ ծրագրավորում մեզ հետ</p>
                         </div>
                     </Carousel.Item>
                     <Carousel.Item className="block block-2">
-                        <img src="images/vectors/web-developer.png"/>
+                        <img src="images/vectors/seo.png"/>
                         <div className="block_text">
                             <h2><b>Զ</b>արգացնող <b>Խ</b>աղեր</h2>
+                            <hr />
                             <p>Զարգացրեք ծրագրավորման գիտելիքները խաղեր խաղալով</p>
                         </div>
                     </Carousel.Item>
@@ -55,6 +57,7 @@ const About = () =>{
                         <img src="images/vectors/website-recovery.png"/>
                         <div className="block_text">
                             <h2><b>Պ</b>ատրաստի <b>Կ</b>այքերի <b>Թ</b>եմպլեյտներ</h2>
+                            <hr />
                             <p>Կարող ես այստեղից ներբեռնել պատրաստի կայքեր և ձևափոխելով այն ստանալ ձեր ուզածը</p>
                         </div>
                     </Carousel.Item>
