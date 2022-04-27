@@ -4,9 +4,60 @@
         .container{
             display: flex;
             justify-content: space-around;
-            // .items{
-
-            // }
+            .items{
+                display: flex;
+                text-align: center;
+                width: 320px;
+                height: 320px;
+                color: var(--white);
+                border-radius: 30px;
+                overflow: hidden;
+                .icons{
+                    width: 50%;
+                    border-left: 4px solid rgba(0, 0, 0, 0.3);
+                    overflow-y: scroll;
+                    border-radius: 5px;
+                    padding: 10px 0;
+                    img{
+                        width: 70px;
+                        margin-top: -10px;
+                    }
+                    &_item{
+                        background: rgba(255, 255, 255, 0.2);
+                        width: 80%;
+                        height: 120px;
+                        margin: 20px auto;
+                        padding: 5px 0 7px;
+                        border-radius: 10px;
+                    }
+                    a{
+                        text-decoration: none;
+                        color: var(--white);
+                    }
+                    &::-webkit-scrollbar{
+                        background: rgba(0, 0, 0, 0.3);
+                        width: 7px;
+                    }
+                    &::-webkit-scrollbar-thumb{
+                        background: rgba(255, 255, 255, 0.5);
+                    }
+                }
+                .main-item{
+                    width: 50%;
+                    img{
+                        margin-top: 55%;
+                        width: 100px;
+                        filter: invert(96%) sepia(0%) saturate(2%) hue-rotate(315deg) brightness(110%) contrast(100%);
+                    }
+                    p{
+                        font-size: 17px;
+                        font-weight: 600;
+                    }
+                }
+                &:first-child{
+                    background: linear-gradient(135deg, rgba(2,0,36,1) 0%, rgba(78,0,202,1) 100%);
+                }
+            }
         }
     }
 }
