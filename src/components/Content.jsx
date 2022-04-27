@@ -2,16 +2,31 @@ import React from "react";
 
 function Content(){
 
+    const style = {
+        filter: "invert(96%) sepia(0%) saturate(2%) hue-rotate(315deg) brightness(110%) contrast(100%)"
+    }
+
+    function openWeb(){
+        document.querySelector('#web-icon').classList.toggle('active');
+    }
+    function openGame(){
+        document.querySelector('#game-icon').classList.toggle('active');
+    }
+    function openTemp(){
+        document.querySelector('#temp-icon').classList.toggle('active');
+    }
+
     return(
         <section className="content">
             <div className="content_desktop" id="content_desktop">
                 <div className="container">
-                    <div className="items">
-                    <div className="main-item" id="web-logo">
+                    <div className="items" onClick={openWeb}>
+                        <div className="main-item" id="web-logo" >
                             <img src="images/icons/weblesson.svg" alt="" />
                             <p>Վեբ Դասեր</p>
                         </div>
                         <div className="icons" id="web-icon">
+                            <div className="mob-back"></div>
                             <div className="icons_item">
                                 <a href="">
                                     <p>HTML5</p>
@@ -19,24 +34,37 @@ function Content(){
                                 </a>
                             </div>
                             <div className="icons_item">
+                                <div className="noWorking">
+                                    <img style={style} src="images/icons/coming-soon.png" alt="" />
+                                    <span>շուտով</span>
+                                </div>
                                 <a href="">
                                     <p>CSS</p>
                                     <img src="images/logo/css.png" alt="" />
                                 </a>
                             </div>
                             <div className="icons_item">
+                                <div className="noWorking">
+                                    <img style={style} src="images/icons/coming-soon.png" alt="" />
+                                </div>
                                 <a href="">
-                                    <p>JS</p>
+                                    <p>JavaScript</p>
                                     <img src="images/logo/js.png" alt="" />
                                 </a>
                             </div>
                             <div className="icons_item">
+                                <div className="noWorking">
+                                    <img style={style} src="images/icons/coming-soon.png" alt="" />
+                                </div>
                                 <a href="">
                                     <p>BOOTSTRAP</p>
                                     <img src="images/logo/boot.png" alt="" />
                                 </a>
                             </div>
                             <div className="icons_item">
+                                <div className="noWorking">
+                                    <img style={style} src="images/icons/coming-soon.png" alt="" />
+                                </div>
                                 <a href="">
                                     <p>SASS/SCSS</p>
                                     <img src="images/logo/sass.png" alt="" />
@@ -45,68 +73,87 @@ function Content(){
                         </div>
                     </div>
 
-                    <div className="items">
-                        <div className="game-icons" id="game-icon">
-                            <a href="games/flexboxdevelopers/index.html" target={"_blank"}>
-                                <i className="fa-solid fa-users">
-                                    <p>FlexBox Dev</p></i>
-                            </a>
-                            <a href="https://gormkrtchyann.github.io/js-game/" target={"_blank"}>
-                                <i className="fa-solid fa-brain">
-                                    <p>JS Memory</p></i>
-                            </a>
-                            <a href="games/quiz/Html Quiz/index.html" target={"_blank"}>
-                                <i className="fa-brands fa-html5">
-                                    <p>HTML Quiz</p>
-                                </i>
-                            </a>
-                            <a href="games/quiz/Css Quiz/index.html" target={"_blank"}>
-                                <i className="fa-brands fa-css3-alt">
-                                    <p>CSS Quiz</p>
-                                </i>
-                            </a>
-                            <a href="games/quiz/Bootstrap Quiz/index.html" target={"_blank"}>
-                                <i className="fa-brands fa-bootstrap">
-                                    <p>BS Quiz</p>
-                                </i>
-                            </a>
-                            <a href="games/quiz/Js Quiz/index.html" target={"_blank"}>
-                                <i className="fa-brands fa-js">
-                                    <p>JS Quiz</p>
-                                </i>
-                            </a>
-                        </div>
+                    <div className="items" onClick={openGame}>
                         <div className="main-item" id="game-logo">
                             <img src="images/icons/game.svg" alt="" />
                             <p>Խաղեր</p>
                         </div>
+                        <div className="game-icons" id="game-icon">
+                            <div className="mob-back"></div>
+                            <div className="icons_item">
+                                <a href="">
+                                    <p>FlexBox Developers</p>
+                                    <img src="images/logo/game01.png" alt="" />
+                                </a>
+                            </div>
+                            <div className="icons_item">
+                                <a href="">
+                                    <p>JavaScript Memory</p>
+                                    <img src="images/logo/logo-center.png" alt="" />
+                                </a>
+                            </div>
+                            <div className="icons_item">
+                                <a href="">
+                                    <p>HTML Quiz</p>
+                                    <img src="images/logo/htmlquiz.png" alt="" />
+                                </a>
+                            </div>
+                            <div className="icons_item">
+                                <a href="">
+                                    <p>CSS Quiz</p>
+                                    <img src="images/logo/cssquiz.png" alt="" />
+                                </a>
+                            </div>
+                            <div className="icons_item">
+                                <a href="">
+                                    <p>BS Quiz</p>
+                                    <img src="images/logo/bootstrapquiz.png" alt="" />
+                                </a>
+                            </div>
+                            <div className="icons_item">
+                                <a href="">
+                                    <p>JS Quiz</p>
+                                    <img src="images/logo/jsquiz.png" alt="" />
+                                </a>
+                            </div>
+                        </div>
                     </div>
 
 
-                    <div className="items">
-                        <div className="temp-icons" id="temp-icon">
-                            <a href="https://gormkrtchyann.github.io/templates/" target={"_blank"}>
-                                <i className="fa-brands fa-shopify">
-                                    <p>Խանութ</p></i>
-                            </a>
-                            <a href="https://gormkrtchyann.github.io/templates/" target={"_blank"}>
-                                <i className="fa-brands fa-bitcoin">
-                                    <p>Կրիպտո</p>
-                                </i>
-                            </a>
-                            <a href="https://gormkrtchyann.github.io/templates/" target={"_blank"}>
-                                <i className="fa-brands fa-42-group">
-                                    <p>Ավելին</p>
-                                </i>
-                            </a>
-                        </div>
+                    <div className="items" onClick={openTemp}>
                         <div className="main-item" id="temp-logo">
                             <img src="images/icons/template.svg" alt="" />
                             <p>Թեմպլեյթներ</p>
                         </div>
+                        <div className="temp-icons" id="temp-icon">
+                            <div className="mob-back"></div>
+                            <div className="icons_item">
+                                <a href="">
+                                    <p>Խանութ</p>
+                                    <img src="images/logo/shopicon.png" alt="" />
+                                </a>
+                            </div>
+                            <div className="icons_item">
+                                <a href="">
+                                    <p>Կրիպտո</p>
+                                    <img style={style} src="images/logo/token.png" alt="" />
+                                </a>
+                            </div>
+                            <div className="icons_item">
+                                <a href="">
+                                    <p>Դասական</p>
+                                    <img src="images/logo/temp.png" alt="" />
+                                </a>
+                            </div>
+                            <div className="icons_item">
+                                <a href="">
+                                    <p>Ավելին</p>
+                                    <img src="images/logo/seeall.png" alt="" />
+                                </a>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                
             </div>
         </section>
     )
