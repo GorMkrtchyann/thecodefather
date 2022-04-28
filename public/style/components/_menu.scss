@@ -9,6 +9,8 @@
     opacity: 0;
     animation: menu-open 1s 0s forwards;
     .container{
+        display: flex;
+        justify-content: space-between;
         ul{
             display: flex;
             justify-content: start;
@@ -20,6 +22,9 @@
                 &:first-child{
                     margin-left: -40px;
                 }
+                @media screen and (max-width: 1200px) {
+                    margin-right: 25px;
+                }
                 &.active{
                     a{
                         color: var(--purple);
@@ -28,6 +33,15 @@
                             filter: invert(17%) sepia(96%) saturate(5190%) hue-rotate(264deg) brightness(72%) contrast(138%);
                             animation: desk-menu-rot 1s 0s forwards;
                         }
+                        @media screen and (max-width: 1024px) {
+                            font-size: 13px;
+                            span{
+                                display: block;
+                            }
+                        }
+                    }
+                    @media screen and (max-width: 1024px) {
+                        margin-right: 10px;
                     }
                 }
                 a{
@@ -49,6 +63,11 @@
                             filter: invert(17%) sepia(96%) saturate(5190%) hue-rotate(264deg) brightness(72%) contrast(138%);
                         }
                     }
+                    @media screen and (max-width: 1024px) {
+                        span{
+                            display: none;
+                        }
+                    }
                 }
                 &:hover{
                     a{
@@ -57,6 +76,33 @@
                         }
                     }
                 }
+            }
+            .products{
+                display: flex;
+                border-left: 1px solid ;
+                li{
+                    &:first-child{
+                        margin-left: 40px;
+                    }
+                    a{
+                        &:hover{
+                            img{
+                                filter: none;
+                            }
+                        }
+                        @media screen and (max-width: 1024px) {
+                            span{
+                                display: none;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .notification{
+            cursor: pointer;
+            img{
+                width: 30px;
             }
         }
     }
@@ -73,6 +119,7 @@
     @media screen and (max-width: 550px) {
         position: fixed;
         width: 93%;
+        height: 65px;
         border-radius: 5px;
         opacity: 1;
         animation: none;
@@ -84,7 +131,9 @@
         margin-right: auto;
         padding: 13px 0 0 0;
         animation: mob-menu-open 1s 0s forwards;
-        box-shadow: 0px 0px 23px -1px rgba(0,0,0,0.4);
+        box-shadow: 0px 0px 23px -1px rgba(0,0,0,0.2);
+        background: url(../../images/background/MenuBack.svg);
+        background-size: cover;
         @keyframes mob-menu-open {
             0%{
                 bottom: -100px;

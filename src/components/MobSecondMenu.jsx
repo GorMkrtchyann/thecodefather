@@ -8,16 +8,11 @@ function MobSecondMenu(){
 
     return(
         <nav className="MobSecondMenu" onClick={openMenu}>
+            <div className="icon"></div>
             <ul className="MobSecondMenu_links">
-                <li className="s-li"><a href="">Գլխավոր</a></li>
-                <li className="s-li"><a href="">Մեր Մասին</a></li>
-                <li className="s-li"><a href="">Կոնտենտ</a>
-                    <ul>
-                        <li><a href="">Վեբ Դասեր</a></li>
-                        <li><a href="">Խաղեր</a></li>
-                        <li><a href="">Թեմպլեյտներ</a></li>
-                    </ul>
-                </li>
+                <li><a href=""><img src="images/logo/casterlogo.png" alt="" /> Caster</a></li>
+                <li><a href=""><img src="images/icons/codeeditor.svg" alt="" /> CodeEditor</a></li>
+                <li><a href=""><img src="images/icons/notification.svg" alt="" /> Ծանուցում</a></li>
             </ul>
         </nav>
     )
