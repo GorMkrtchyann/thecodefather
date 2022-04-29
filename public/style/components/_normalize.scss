@@ -9,6 +9,28 @@
 body{
     margin: 0;
     padding: 0;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    &::-webkit-scrollbar{
+        opacity: 0;
+    }
+}
+    
+
+.body-a{
+    width: 100%;
+    height: 100vh;
+    overflow-y: scroll;
+    &::-webkit-scrollbar{
+        transition: 0.3s;
+        opacity: 1;
+        width: 8px;
+        background: var(--white);
+    }
+    &::-webkit-scrollbar-thumb{
+        background: var(--purple);
+    }
 }
 
 #body{

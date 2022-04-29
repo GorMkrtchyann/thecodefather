@@ -180,7 +180,15 @@
                             color: var(--white);
                         }
                         &::-webkit-scrollbar{
-                            display: none;
+                            background: rgba(0, 0, 0, 0.1);
+                        }
+                        &::-webkit-scrollbar-thumb{
+                            background: url(../../images/icons/scrollMobile.svg);
+                            background-repeat: no-repeat;
+                            background-size: 15px;  
+                            background-position: -5px 30px;
+                            width: 10px;
+                            height: 50px;
                         }
                     } 
                 }

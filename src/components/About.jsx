@@ -5,7 +5,7 @@ import Carousel from 'react-bootstrap/Carousel';
 
 const About = () =>{
     return(
-        <section className="about">
+        <section className="about" id="about">
             <div className="about_desktop container">
                 <div className="block-2 block">
                     <img src="images/vectors/seo.png" alt="" />

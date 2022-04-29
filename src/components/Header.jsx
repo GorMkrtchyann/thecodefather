@@ -11,12 +11,12 @@ function Header(){
 
     return(
         <section>
-            <header>
+            <header id="header">
                 <div className="container header">
                     <div className="header_text-btn">
                         <h1><span>The</span> CodeFather</h1>
                         <p>Սովորիր և զարգացրու ծրագրավորմանդ գիտելիքները մեզ հետ</p>
-                        <a href="#">
+                        <a href="https://gormkrtchyann.github.io/thecodefather-about/" target={"_blank"}>
                             <div className="btn" onMouseEnter={hoverOn} onMouseLeave={hoverOff}>
                                 <span>Մեր Մասին</span>
                                 <div className="hover"></div>
